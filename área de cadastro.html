@@ -59,8 +59,8 @@ input[type=password], select {
   box-sizing: border-box;
 }
 
-input[type=registrar] {
-  width: 95%;
+input[type=submit] {
+  width: 100%;
   background-color: Gray;
   color: white;
   padding: 10px 10px;
@@ -71,7 +71,7 @@ input[type=registrar] {
   cursor: pointer;
 }
 
-input[type=registrar]:hover {
+input[type=submit]:hover {
   background-color: #A9A9A9;
 }
 
@@ -100,29 +100,35 @@ footer {
 
 <div>
   <form action="/action_page.php">
-  <p class="p2">  <label for="pname">Primeiro Nome:</label>
-    <input type="text" id="fname" name="primeironome" placeholder="Seu nome">
+  <p class="p2">  <label for="pname">Crie um Usuário:</label>
+    <input type="text" id="fname" name="nomedeusuario" placeholder="Crie um Usuário">
 
-    <label for="sobren">Sobrenome:</label>
-    <input type="text" id="lname" name="sobrenome" placeholder="Seu Sobrenome">
+  
+
+     <label for="senha" >Crie uma Senha:</label>
+   <input type="password" id="Senha" name="senha"
+   placeholder="Crie uma Senha" ><br> 
+
+
 
     <label for="e-mail" >Insira seu E-mail:</label>
    <input type="e-mail" id="E-mail" name="e-mail"
    placeholder="Insira seu E-mail" >
 
-    <label for="senha" >Crie uma Senha:</label>
-   <input type="password" id="Senha" name="senha"
-   placeholder="Crie uma Senha" ><br> 
- 
-   <label for="date" >Data de nascimento:</label>
+
+
+   <label for="date" >Data de Nascimento:</label>
     <input id="date" type="date"><br>
+   
+ 
+   
   
 
 
   <br><label for="sexo" >Sexo:</label>
   <input type="radio" id="homem" name="drone" value="homem"
          checked>
-  <label for="homem">homem</label>
+  <label for="homem">Homem</label>
 
 
 
@@ -134,7 +140,7 @@ footer {
   <input type="radio" id="outro" name="drone" value="outro">
   <label for="outro">Outros</label>
 
-  <br> <input type="registrar" value="Registrar">
+  <br> <input button type="submit" value="Enviar">
 </div>
 </form>
 
@@ -142,7 +148,7 @@ footer {
 
 
   
-<footer><p class="p2">Feito por:Edvaldo Júnior</p></footer>
+<footer><p class="p2">Feito Por:Edvaldo Júnior</p></footer>
 
 </body>
 </html>
